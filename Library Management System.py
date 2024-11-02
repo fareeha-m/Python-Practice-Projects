@@ -29,7 +29,7 @@ while True:
             print ("Title not found!")
     elif choice == "3":
         title = input("Enter the title you want to borrow: ")
-        if title in lib and lib[title]['quantity'] >0:
+        if title in lib and lib[title]['quantity'] > 0:
             lib[title]['quantity'] -= 1
             print (f"The {title} has been issued to you")
         else:
